@@ -1,0 +1,425 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'roboto';
+}
+
+/* navbar */
+.nav{
+    display:flex;
+    padding:5px 5px;
+}
+.socialmedialinks{
+    display: flex;
+    margin-left: 10%;
+    margin-top:10px;
+}
+
+.social{
+    margin-left: 50%;
+}
+
+.searchicon{
+    margin-left:35%;
+    margin-top:10px;
+}
+.togglebutton{
+    margin-left: auto;
+    margin-top:10px;
+}
+
+.fa-search, .fa-bars{
+    color: #dd1818;
+}
+
+.social .fab.fa-facebook-f{
+    color: #003973;
+}
+.social .fab.fab.fa-instagram{
+    color: #e55d87;
+}
+.social .fab.fab.fa-linkedin-in{
+    color: #5fc3e4;
+}
+
+.navbackground{
+    background: url('../images/navbarbg.svg');
+    background-repeat: no-repeat;
+    background-position-x: -5%;
+    height: 150px;
+    z-index: 2;
+}
+
+#logo{
+    height:25px;
+    width: 90px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav a{
+    text-decoration: none;
+    color: #333333;
+}
+
+.dropdown-menu{
+    position:absolute;
+    top:40px;
+    left: 20px;
+    display: none;
+}
+
+.dropdown-menu ul{
+    list-style-type: none;
+}
+
+.dropdown-menu ul li{
+    margin-top:10px;
+}
+
+.dropdown-menu ul li a{
+    text-decoration: none;
+    color: #dd1818;
+}
+
+.searcharea{
+    position: absolute;
+    top:40px;
+    left: 40%;
+    display: none;
+}
+
+input[type="searchbox"]{
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 1px palevioletred solid;
+    outline: none;
+    font-size: 0.9rem;
+    background: transparent;
+}
+
+input[type="searchbox"]::placeholder{
+    color: #dd1818;
+}
+
+.toggle{
+    display:block;
+}
+
+.header{
+    position: absolute;
+    top: 10%;
+    text-align: center;
+    padding: 10px;
+    left: 30%;
+}
+
+/* headings */
+.heading{
+    font-family: 'roboto thin';
+    color: #dd1818;
+}
+p{
+    color: #333333;
+}
+.header{
+    margin-bottom: 10%;
+}
+.header p{
+    line-height: 1.5rem;
+}
+
+.intro{
+    text-align: justify;
+}
+
+.motto{
+    font-weight: bolder;
+    display: block;
+    color: darkred;
+}
+
+@media(max-width:350px){
+    .header{
+        margin-top:5%;
+    }
+}
+@media(min-width:600px){
+    .header{
+        margin-top:3%;
+    }
+}
+
+@media(min-width:750px){
+    .header{
+        margin-top:-5%;
+    }
+}
+@media(min-width:800px){
+    .header{
+        margin-top:3%;
+    }
+}
+
+@media(min-width:1024px){
+    .header{
+        margin-top:-2%;
+    }
+}
+/* content */
+.img-slider img{
+    width: 99%;
+    height:250px;
+    margin: 0 2px;
+}
+
+.img-slider{
+    padding: 0 3px;
+}
+
+.products{
+    margin:5% 0;
+}
+
+.products h1{
+    margin-left: 10%;
+}
+.products p{
+    margin-left: 10%;
+    margin-top:5px;
+    margin-bottom: 5px;
+}
+
+@media(min-width:400px){
+    .products{
+        margin-top:15%;
+    }
+}
+@media(min-width:600px){
+    .products{
+        margin-top:5%;
+    }
+}
+@media(max-width:550px){
+    .products{
+        margin-top:25%;
+    }
+}
+@media(max-width:350px){
+    .products{
+        margin-top:40%;
+    }
+}
+
+/* contacts */
+.contacts{
+    text-align: center;
+    height:500px;
+    background: url('../images/side.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 200px;
+    background-position-y: -100px;
+}
+
+.contact-info{
+    width: 100%;
+    float: left;
+    margin: 5% 0;
+    
+}
+
+.contacts p a{
+    text-decoration: none;
+    color:#dd1818;
+    font-style: bold;
+    font-size: 1.5rem;
+
+}
+
+.contacts h1{
+    color: #333333;
+}
+
+@media(min-width:600px){
+    .contact-info{
+        width: 50%;
+    }
+    .contacts{
+        background-position-x: 500px;
+        background-position-y: -300px; 
+    }
+}
+
+.social-media{
+    display: flex;
+    justify-content: center;
+}
+
+.contact-social{
+    margin:2% 5%;
+}
+
+.contact-social .fab{
+    padding: 10%;
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    color: white;
+}
+
+.contact-social .fab:hover{
+    opacity: 0.5;
+}
+.contact-social .fab.fa-facebook-f{
+    color: #3b5998;
+
+}
+
+.contact-social .fab.fa-linkedin-in{
+    background: #13808b;
+}
+.contact-social .fab.fa-instagram{
+    background: #e08564;
+}
+/* map */
+#map{
+    height: 400px;
+    width:100%;
+    background: gray;
+    margin-top:25%;
+}
+
+@media(min-width:600px){
+    #map{
+        margin-top:-5%;
+    }
+}
+
+/* footer */
+.footer{
+    font-size:1rem;
+    background-color: #e684ae;;
+    height: 300px;
+    color: whitesmoke;
+    display: flex;
+    justify-content: space-around;
+}
+.left,.right{
+    width: 100%;
+    padding: 10px;
+}
+
+.bottom{
+    margin-top: 10%;
+}
+
+.footer-content ul{
+    list-style: none;
+}
+
+.footer-content ul li{
+    margin:5%;
+}
+.footer-content ul li a{
+    text-decoration: none;
+    color: #333333;
+    margin-bottom: 2%;
+    font-family: 'roboto regular';
+    letter-spacing: 0.2rem;
+}
+
+.footer-content h4{
+    font-family: 'roboto thin';
+    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
+    margin-bottom: 2%;
+}
+.email{
+    border:none;
+    outline: none;
+    width: 100%;
+    background: transparent;
+    margin:5% 0;
+    color: white;
+    opacity: 0.5;
+}
+
+.email2{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid white;
+    display: block;
+    background: transparent;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    color: whitesmoke;
+    font-style: italic;
+    opacity: 1;
+}
+
+::placeholder{
+    color: whitesmoke;
+    font-family: 'roboto thin';
+}
+
+@media(min-width:500px){
+    .left,.right{
+        display: flex;
+        justify-content: space-around;
+    }
+    .footer-content{
+        margin: 0 5%;
+    }
+    .footer-content{
+        margin:0;
+    }
+    .left .footer-content:nth-of-type(2){
+        margin-left:10%;
+    }
+}
+
+button{
+    border:0;
+    width:100px;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'roboto';
+    font-size: 1rem;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+    color:whitesmoke;
+    background: #333333;
+}
+
+h4 span{
+    font-size: 0.9rem;
+    font-family: 'roboto thin'
+}
+
+h4 .fab{
+    color: #333333;
+    margin:5% 3%;
+}
+
+h4 a{
+    text-decoration: none;
+    color: #333333;
+    letter-spacing: 0.01rem;
+    margin-bottom: 10px;
+}
+.portfolio{
+    margin:5% 0;
+}
+h4 .copyrights{
+    font-size: 0.4rem;
+    font-style: italic;
+}
